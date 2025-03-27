@@ -41,6 +41,9 @@ const Postlist = () => {
         //   query.queryKey[0] === "posts" && query.queryKey[1].page >= 2,
       });
     },
+    onError: (error)=>{
+        console.log('error',error)
+    }
 
     // onError: (error, variables, context) => {},
     // onSettled: (data, error, variables, context) => {},
@@ -72,6 +75,7 @@ const Postlist = () => {
 
     e.target.reset();
   };
+  //Adding rebase options again
 
   return (
     <div className="container">
