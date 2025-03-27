@@ -94,7 +94,7 @@ const Postlist = () => {
         </div>
         <button>Post</button>
       </form>
-      {isLoading && isPending && <p>Loading</p>}
+      {isLoading && isPending && <p>Loading....</p>}
       {isError && <p>{error?.message}</p>}
       {isPostError && <p onClick={reset}>{postError?.message}</p>}
 
@@ -103,7 +103,7 @@ const Postlist = () => {
           onClick={() => setPage((oldPage) => Math.max(oldPage - 1, 0))}
           disabled={!postData?.prev}
         >
-          Previous Pages
+          Previous Pages 
         </button>
         <span>{page}</span>
         <button
