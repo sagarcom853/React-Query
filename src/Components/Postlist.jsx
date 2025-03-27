@@ -75,6 +75,7 @@ const Postlist = () => {
 
     e.target.reset();
   };
+  //Adding rebase options
 
   return (
     <div className="container">
